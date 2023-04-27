@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/4158575_check_cyber_filing_list_listing_icon.png">
+    <title>Student registration form</title>
+</head>
+<body>
+    <h2>Student Registration Form</h2>
+    <form>
+        <div class="fields">
+            <span>First Name:</span>
+            <input type="text" placeholder="Enter your first name" required pattern="[a-zA-Z]{3,6}" title="min 3 and max 6 letters...!" class="input-text">
+        </div>
+        <div class="fields">
+            <span>Last Name:</span>
+            <input type="text" placeholder="Enter your last name" required pattern="[a-zA-Z]+" title="Only letters...!" class="input-text">
+        </div>
+        <div class="fields">
+            <span>Email:</span>
+            <input type="email" placeholder="it should contain @" required class="input-text" >
+        </div>
+        <div class="fields">
+            <span>Mobile:</span>
+            <input type="text" placeholder="Only 10 digits are allowed" pattern="[0-9]{10}" required class="input-text" >
+        </div>
+        <div class="fields">
+            <span>Gender :</span>
+            <div class="input-radio">
+            <input type="radio" name=" gender">&nbsp;&nbsp;Male
+            <input type="radio" name=" gender">&nbsp;&nbsp;Female
+        </div>
+        </div>
+        <div class="fields">
+            <span>Date of birth :</span>
+            <input type="datetime-local" placeholder="mm/dd/yyyy" class="input-text">
+        </div>
+        <div class="fields">
+            <span>Address :</span>
+            <textarea rows="5" cols="40" class="input-text"></textarea>
+        </div>
+        <div class="fields">
+            <span>City:</span>
+            <input type="text"  class="input-text">
+        </div>
+        <div class="fields">
+            <span>AreaPin:</span>
+            <input type="text"  class="input-text">
+        </div>
+        <div class="fields">
+            <span>State:</span>
+            <input type="text"  class="input-text">
+        </div>
+        <div class="fields">
+            <span>Qualification:</span>
+            <select class="input-text" style="width: 320px;">
+                <option hidden> --- Select qualification --- </option>
+                <option> BBA </option>
+                <option > BCA </option>
+                <option> B.Com </option>
+                <option> B.Tech </option>
+            </select>
+        </div>
+        <div class="fields">
+            <span>Specialization:</span>
+            <div class="chkbx">
+                <input type="checkbox"> Computer Science<br>
+                <input type="checkbox"> Information Technology<br>
+                <input type="checkbox"> Computer Architechture<br>
+                <input type="checkbox"> Tele Communication<br>
+            </div>
+        </div>
+        <div class="fields">
+            <span>State:</span>
+            <input type="password"  class="input-text">
+        </div>
+
+        <button>Registered</button>
+
+    </form>
+    
+</body>
+</html>
